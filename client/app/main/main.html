@@ -1,0 +1,81 @@
+
+<div class="container">
+      <div class="loading" ng-show="$ctrl.loading">
+        Loading&#8230;
+      </div>
+
+      <div id="page">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="col-md-12 chart-wrapper bs-loading-overlay" id="menuselect">
+              <div class="chart-title">
+                <strong> State Selector </strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+
+          </div>
+          <div class="col-md-3">
+            <div class="col-md-12 chart-wrapper bs-loading-overlay" id="total-projects">
+              <div class="chart-title">
+                <strong> Total Donation Count </strong>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="col-md-12 chart-wrapper bs-loading-overlay" id="net-donations">
+              <div class="chart-title">
+                <strong> Nett Donations ($) </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-centered">
+            <div class="col-md-4 col-centered dc-data-count dc-chart" id="row-selection">
+              <span class="filter-count">_</span> selected out of <span class="total-count">_</span> records | <a ng-click="$ctrl.resetAll()">Reset All</a>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="col-md-12 chart-wrapper bs-loading-overlay"  id="date-chart">
+              <div class="chart-title bold"> <strong> Number of Donations </strong></div>
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="col-md-12 chart-wrapper bs-loading-overlay" id="resource-chart">
+              <div class="chart-title">  <strong> Donation Count for Resources </strong> </div>
+
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="col-md-12 chart-wrapper bs-loading-overlay" id="funding-chart">
+              <div class="chart-title">  <strong> Funding Status </strong> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="col-md-12 chart-wrapper bs-loading-overlay"  id="grade-chart">
+              <div class="chart-title">  <strong> Donation Count by Grade </strong> </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="col-md-12 chart-wrapper bs-loading-overlay" id="poverty-chart">
+              <div class="chart-title">  <strong> Donation Count by Poverty Level</strong></div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="col-md-12 chart-wrapper bs-loading-overlay"  id="state-donations">
+              <div class="chart-title">  <strong> Donation Amount by State ($) </strong> </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+</div>
