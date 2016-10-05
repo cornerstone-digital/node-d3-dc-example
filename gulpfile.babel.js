@@ -51,7 +51,7 @@ const paths = {
         }
     },
     karma: 'karma.conf.js',
-    dist: 'dist'
+    dist: './app/dist'
 };
 
 /********************
@@ -501,9 +501,9 @@ gulp.task('build:images', () => {
 });
 
 gulp.task('revReplaceWebpack', function() {
-    return gulp.src('dist/client/app.*.js')
+    return gulp.src('./app/dist/client/app.*.js')
         .pipe(plugins.revReplace({manifest: gulp.src(`${paths.dist}/${paths.client.revManifest}`)}))
-        .pipe(gulp.dest('dist/client'));
+        .pipe(gulp.dest('./app/dist/client'));
 });
 
 gulp.task('copy:extras', () => {
