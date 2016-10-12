@@ -51,7 +51,7 @@ const paths = {
         }
     },
     karma: 'karma.conf.js',
-    dist: './app/dist'
+    dist: './dist'
 };
 
 /********************
