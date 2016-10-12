@@ -11,7 +11,7 @@ import config from './config/environment';
 import http from 'http';
 
 // Connect to MongoDB
-mongoose.connect(config.mongo.uri, config.mongo.options);
+mongoose.connect('mongodb://web:chequers2005@ds049436.mlab.com:49436/heroku_zbwqfxdk');
 mongoose.connection.on('error', function(err) {
   console.error(`MongoDB connection error: ${err}`);
   process.exit(-1); // eslint-disable-line no-process-exit

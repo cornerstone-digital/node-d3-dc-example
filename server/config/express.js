@@ -19,8 +19,6 @@ import session from 'express-session';
 import connectMongo from 'connect-mongo';
 import mongoose from 'mongoose';
 
-console.log(config);
-
 var MongoStore = connectMongo(session);
 
 export default function(app) {

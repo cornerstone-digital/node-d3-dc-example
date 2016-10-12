@@ -175,7 +175,5 @@ var _mongoose2 = _interopRequireDefault(_mongoose);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log(_environment2.default);
-
 var MongoStore = (0, _connectMongo2.default)(_expressSession2.default);
 //# sourceMappingURL=express.js.map
