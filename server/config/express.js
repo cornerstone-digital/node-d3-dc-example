@@ -18,6 +18,9 @@ import config from './environment';
 import session from 'express-session';
 import connectMongo from 'connect-mongo';
 import mongoose from 'mongoose';
+
+console.log(config);
+
 var MongoStore = connectMongo(session);
 
 export default function(app) {
@@ -54,7 +57,7 @@ export default function(app) {
     resave: false,
     store: new MongoStore({
       mongooseConnection: mongoose.connection,
-      db: 'node-d3-dc-example'
+      db: 'donorschoose'
     })
   }));
 
