@@ -31,8 +31,7 @@ describe('Thing API Router:', function() {
 
   describe('GET /api/projects', function() {
     it('should route to project.controller.index', function() {
-      expect(routerStub.get
-        .withArgs('/', 'projectCtrl.index')
+      expect(routerStub.get.withArgs('/', 'projectCtrl.index')
         ).to.have.been.calledOnce;
     });
   });
